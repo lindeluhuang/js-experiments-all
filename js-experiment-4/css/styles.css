@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "HK Grotesk";
+    font-weight: 400;
+    src: url(../assets/hk-grotesk.woff);
+}
+
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+header {
+    position: fixed;
+    top: 36px;
+    left: 36px;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 08px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    height: 500px;
+    position: relative;
+}
+
+div.content {
+    position: relative;
+}
+
+div.square {
+    width:100px;
+    height: 100px;
+}
+
+div.circle {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+}
+
+section.s1 {
+    background-color: #9D777F;
+}
+
+section.s1 div.square {
+    background-color: #D2B1C2;
+
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+section.s1 div.circle {
+    background-color: #48557D;
+
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+}
+
+section.s2{
+    background-color: #888978;
+}
+
+section.s2 div.square {
+    background-color: #D0B997;
+
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+section.s2 div.circle {
+    background-color: #C6C4CF;
+
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+}
+
+section.s3 {
+    background-color: #A49086;
+}
+
+section.s3 div.square {
+    background-color: #8E726F;
+
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+section.s3 div.circle {
+    background-color: #4564A9;
+
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+}
+
+section.s4 {
+    background-color: #C0C39C;
+}
+
+section.s4 div.square {
+    background-color: #EDEAF1;
+
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+section.s4 div.circle {
+    background-color: #647541;
+
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+}
