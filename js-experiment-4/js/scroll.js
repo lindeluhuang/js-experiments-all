@@ -37,13 +37,35 @@ document.addEventListener("scroll", function () {
             if (section.hasAttribute("data-is-dark")) {
                 headerTag.classList.add("white");
                 progressTag.classList.add("white");
-                console.log("white!!")
             } else {
                 headerTag.classList.remove("white");
                 progressTag.classList.remove("white");
-                console.log("not white!!")
             }
         }
     })
+})
 
+// when scroll, make things parallax 
+// move certain tags based off how far they are from anchor point
+// anchor point = middle of section
+// how far to parallax? ratio of middle (not top) scrolled to parallax to anchor
+document.addEventListener("scroll", function () {
+    const topViewport = window.pageYOffset;
+    const midViewport = topViewport + (window.innerHeight/2);
+
+    sections.forEach(section => {
+        const topSection = section.offsetTop;
+        const midSection = topSection + section.offsetHeight/2;
+
+        const distanceToSection = midViewport - midSection;
+
+        const parallaxTags = section.querySelectorAll(`[data-parallax]`)
+
+        // loop over each parallaxed tag
+        parallaxTags.forEach(tag => {
+            const speed = parseFloat(tag.getAttribute("data-parallax"))
+            tag.style.transform = `translate(0, ${distanceToSection * speed}px)`
+        })
+        
+    })
 })
