@@ -19,6 +19,16 @@ body {
     line-height: 1.25;
 }
 
+.progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-color: #333333;
+    z-index: 1;
+}
+
 header {
     position: fixed;
     top: 36px;
@@ -61,6 +71,8 @@ div.circle {
 
     border-radius: 50%;
 }
+
+
 
 section.s1 {
     background-color: #9D777F;
