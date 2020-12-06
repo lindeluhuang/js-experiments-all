@@ -126,11 +126,11 @@ section.s2 div.circle {
 }
 
 section.s3 {
-    background-color: #8E726F;
+    background-color: #5F5349;
 }
 
 section.s3 div.square {
-    background-color: #A49086;
+    background-color: #B55053;
 
     position: absolute;
     top: 50px;
@@ -138,7 +138,7 @@ section.s3 div.square {
 }
 
 section.s3 div.circle {
-    background-color: #4564A9;
+    background-color: #C08E65;
 
     position: absolute;
     bottom: 50px;
@@ -146,11 +146,11 @@ section.s3 div.circle {
 }
 
 section.s4 {
-    background-color: #C0C39C;
+    background-color: #A99C89;
 }
 
 section.s4 div.square {
-    background-color: #EDEAF1;
+    background-color: #E1E0DF;
 
     position: absolute;
     top: 50px;
@@ -158,7 +158,7 @@ section.s4 div.square {
 }
 
 section.s4 div.circle {
-    background-color: #647541;
+    background-color: #3A3D5A;
 
     position: absolute;
     bottom: 50px;
